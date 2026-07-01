@@ -22,8 +22,18 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
 
 
-class Product(models.Model):
+class Tag(models.Model):
+    
+    name = models.CharField(max_length=20)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True) 
 
+    def __str__(self) -> str:
+        return self.name
+    
+
+class Product(models.Model):
+    tags = models.ManyToManyField(Tag, blank=True)
     category = models.ForeignKey(Category, null=True, on_delete=models.DO_NOTHING)
     description = models.TextField(max_length=250, null=True, blank=True)
     image = models.ImageField(upload_to="imgs/products/", null=True, blank=True)
@@ -72,3 +82,5 @@ class Comment(models.Model):
     def __str__(self):
         who = self.user.username if self.user else (self.guest_name or "Guest")
         return f"{who} - {self.rating}★"
+
+

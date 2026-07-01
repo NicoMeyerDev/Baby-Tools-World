@@ -78,4 +78,3 @@ class Comment(models.Model):
     def __str__(self):
         who = self.user.username if self.user else (self.guest_name or "Guest")
         return f"{who} - {self.rating}★"
-    

@@ -59,7 +59,7 @@ def product_detail(request, category_slug, pk):
 
             return redirect("product_detail", category_slug=category_slug, pk=product.pk)
     else:
-        form = CommentForm()#initial=initial
+        form = CommentForm()
 
     return render(
         request,

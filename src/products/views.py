@@ -60,7 +60,8 @@ def product_detail(request, category_slug, pk):
             request.session["just_posted"] = True
             return redirect("product_detail", category_slug=category_slug, pk=product.pk)
     else:
-        """pre-fill the form with existing comment data if the user has already commented, unless they just posted a comment."""
+        """pre-fill the form with existing comment data if the user has
+        already commented, unless they just posted a comment."""
         if not request.session.pop("just_posted", False):
             initial = {}
             if request.user.is_authenticated:

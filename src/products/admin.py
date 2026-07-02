@@ -11,7 +11,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("name", "created_at")
 
 
 @admin.register(Product)

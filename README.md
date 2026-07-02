@@ -62,7 +62,7 @@ In order to quickly get started with the project follow these steps:
 
 The project is modularized into several apps:
 
-- `products`: Manages product listings and categories
+- `products`: Manages product listings, categories and tags
 - `users`: Handles user authentication and registration.
 
 Each app has its own `models.py`, `views.py`, `urls.py`, and `admin.py` files to encapsulate its functionality.

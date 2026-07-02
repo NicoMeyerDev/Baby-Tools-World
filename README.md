@@ -1,26 +1,26 @@
 # Baby Tools World
 
-Baby Tools World is an online shop where customers can browse and buy products for babies and kids. Customers can leave comments on products and rate them.This project was built as a learning exercise.
+Baby Tools World is an online shop where customers can browse and buy products for babies and kids. Customers can leave comments on products and rate them. This project was built as a learning exercise.
 
 ## Table of contents
 
-* [Baby Tools World](#baby-tools-world)
-  * [Prerequisites](#prerequisites)
-  * [Quickstart](#quickstart)
-  * [Project structure](#project-structure)
-  * [Apps Overview](#apps-overview)
-  * [Usage](#usage)
-    * [Configuration](#configuration)
-    * [Running the linting tools](#running-the-linting-tools)
-    * [When to run this](#when-to-run-this)
-    * [Testing](#testing)
-    * [Running tests](#running-tests)
-    * [Running with a WSGI Server](#running-with-a-wsgi-server)
-    * [Seeding the application with data](#seeding-the-application-with-data)
-  * [Containerization](#containerization)
-    * [Build an image](#build-an-image)
-    * [Run a container](#run-a-container)
-    * [Commands in the Docker container](#commands-in-the-docker-container)
+- [Baby Tools World](#baby-tools-world)
+  - [Prerequisites](#prerequisites)
+  - [Quickstart](#quickstart)
+  - [Project structure](#project-structure)
+  - [Apps Overview](#apps-overview)
+  - [Usage](#usage)
+    - [Configuration](#configuration)
+    - [Running the linting tools](#running-the-linting-tools)
+    - [When to run this](#when-to-run-this)
+    - [Testing](#testing)
+    - [Running tests](#running-tests)
+    - [Running with a WSGI Server](#running-with-a-wsgi-server)
+    - [Seeding the application with data](#seeding-the-application-with-data)
+  - [Containerization](#containerization)
+    - [Build an image](#build-an-image)
+    - [Run a container](#run-a-container)
+    - [Commands in the Docker container](#commands-in-the-docker-container)
 
 ## Prerequisites
 
@@ -149,7 +149,7 @@ the application can handle HTTP requests efficiently and reliably in a scalable 
 > but sometimes running `gunicorn` on windows results in problems that can be circumvented by using `waitress` instead.
 >
 > See the following [quote](https://docs.gunicorn.org/en/stable/index.html) from the official gunicorn website:
->> Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX.
+>> Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX.
 
 For more information about WSGI and its configuration, see the [wsgi documentation](./docs/wsgi.md).
 

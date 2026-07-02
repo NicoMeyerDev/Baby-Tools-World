@@ -1,10 +1,26 @@
 # Baby Tools World
 
-This repository contains the source code of the 'Baby Tools World' which is a simple full stack shop application written in Python using Django 6.
-The project was developed for educational purposes only and therefore has no claim to feature completeness, or only minimal claims regarding application security, user experience, or design.
+Baby Tools World is an online shop where customers can browse and buy products for babies and kids. Customers can leave comments on products and rate them.This project was built as a learning exercise.
 
-> [!NOTE]
-> This project assumes you already know the python programming language
+## Table of contents
+
+* [Baby Tools World](#baby-tools-world)
+  * [Prerequisites](#prerequisites)
+  * [Quickstart](#quickstart)
+  * [Project structure](#project-structure)
+  * [Apps Overview](#apps-overview)
+  * [Usage](#usage)
+    * [Configuration](#configuration)
+    * [Running the linting tools](#running-the-linting-tools)
+    * [When to run this](#when-to-run-this)
+    * [Testing](#testing)
+    * [Running tests](#running-tests)
+    * [Running with a WSGI Server](#running-with-a-wsgi-server)
+    * [Seeding the application with data](#seeding-the-application-with-data)
+  * [Containerization](#containerization)
+    * [Build an image](#build-an-image)
+    * [Run a container](#run-a-container)
+    * [Commands in the Docker container](#commands-in-the-docker-container)
 
 ## Prerequisites
 
@@ -180,3 +196,10 @@ In order to overwrite predefined environment configuration in the app, you can s
 ```bash
 docker run --rm -it -p 8000:8000 --env-file .env baby-tools-world:local
 ```
+
+#### Commands in the Docker container
+
+1. open another terminal
+2. List all open containers and copy the desired CONTAINER_ID `docker ps`
+3. Opening up the bash shell to run a command inside an already running container `docker exec -t [container-id] bash`
+4. Now you can run all commands within this running container

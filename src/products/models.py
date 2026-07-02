@@ -22,6 +22,7 @@ class Category(models.Model):
 
 
 class Tag(models.Model):
+    '''This model represents a tag that can be associated with products.'''
     name = models.CharField(max_length=20)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
